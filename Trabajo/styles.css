@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse;
+}
+td {
+  border: none;
+  text-align: center;
+}
+th {
+  border-collapse: collapse;
+  background-color: red;
+}
+tbody > tr:nth-of-type(odd) {
+  background-color: blue;
+}
