@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Stilo.css" />
+    <style>
+      .cajaRelativa{
+        position:relative;
+        width: 1000px;
+        height: 500px;
+        border: 4px solid cyan;
+        overflow: scroll;
+        background-color: blanchedalmond;
+      }
+      .cajaAbsoluta{
+        position: absolute;
+        left: 350px;
+        width: 300px;
+        height: 300px;
+        border: 4px solid brown;
+        background-color: aquamarine;
+      }
+    </style>
   </head>
   <body>
-    <
-    <div class="contenedor">
-      <div id="caja1" class="caja">Cajitas 1</div>
-      <div id="caja2" class="caja">Cajitas 2</div>
-      <div id="caja3" class="caja">Cajitas 3</div>
-      <div id="caja4" class="caja">Cajitas 4</div>
-      <div id="caja5" class="caja">Cajitas 5</div>
-      <div id="caja6" class="caja">Cajitas 6</div>
+    <div class="cajaRelativa"><div class="cajaAbsoluta"></div></div>
     </div>
   </body>
 </html>
