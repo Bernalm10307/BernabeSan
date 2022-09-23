@@ -1,5 +1,5 @@
 img {
-  float: left;
+  /* float: left; */
   width: 100px;
   height: 100px;
 }
@@ -15,7 +15,7 @@ ul {
 }
 li {
   text-align: -webkit-match-parent;
-  float: left;
+  /* float: left; */
   display: block;
   padding: 20px;
 }

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas:
+    "menulat enca enca"
+    "menulat col1 col2"
+    "menulat col3 col4";
+
+  justify-content: center;
+  align-content: center;
+}
+.caja {
+  background-color: aquamarine;
+  text-align: center;
+  border: 1px solid blue;
+}
+#enca {
+  grid-area: enca;
+}
+#menulat {
+  grid-area: menulat;
+}
+#col1 {
+  grid-area: col1;
+}
+#col2 {
+  grid-area: col2;
+}
+#col3 {
+  grid-area: col3;
+}
+#col4 {
+  grid-area: col4;
+}
+@media screen and (max-width: 800px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas:
+      "enca"
+      "munulat"
+      "col1"
+      "col2"
+      "col3"
+      "col4";
+  }
+}
