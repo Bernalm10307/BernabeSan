@@ -19,16 +19,18 @@
       <div id="caja8" class="caja">Caja 8</div>
       <div id="caja9" class="caja">Caja 9</div>
     </div>
-    <button id="miboton1" onclick="alert('click en el boton 1')">Hola1</button>
-    <button id="miboton2">Hola2</button>
-    <button id="miboton3">Hola3</button>
+    <div>
+      <button id="miboton1" onclick="alert('click en el boton 1')">
+        Hola1
+      </button>
+    </div>
     <script type="text/javascript">
-      document.getElementById("miboton2").onclick = function () {
+      document.getElementById("Caja1").onclick = function () {
         alert("click en boton 2");
       };
 
-      document.querySelector("#miboton3").addEventListener("click", Mifuncion2);
-      document.querySelector("#miboton3").addEventListener("click", Mifuncion1);
+      document.querySelector("#Caja2").addEventListener("click", Mifuncion2);
+      document.querySelector("#Caja3").addEventListener("click", Mifuncion1);
 
       function Mifuncion1() {
         alert("click en boton 3 / Funcion 1");
