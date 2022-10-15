@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vw;
+}
+
+div.sidebar {
+  position: static;
+  background-color: lightgray;
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: cyan;
+  color: black;
+}
+
+div.content {
+  float: left;
+  width: calc(100% - 200px);
+  background-color: yellow;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+.contenidoOpcion {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+input:checked + .sidebar {
+  display: none;
+}
+
+/*
+input:checked ~ .content
+{
+    margin-left: 0px;
+}
+*/
+@media screen {
+  div.sidebar {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
