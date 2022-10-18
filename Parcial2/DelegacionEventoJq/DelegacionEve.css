@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.caja {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  text-align: center;
+  border: 2px solid red;
+}
