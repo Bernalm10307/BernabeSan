@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div id="cont" class="contenedor">
+      <div id="caja1" class="caja" onclick="Mifuncion1()">Caja 1</div>
+      <div id="caja2" class="caja">Caja 2</div>
+      <div id="caja3" class="caja">Caja 3</div>
+      <div id="caja4" class="caja">Caja 4</div>
+      <div id="caja5" class="caja">Caja 5</div>
+      <div id="caja6" class="caja">Caja 6</div>
+      <div id="caja7" class="caja">Caja 7</div>
+      <div id="caja8" class="caja">Caja 8</div>
+      <div id="caja9" class="caja">Caja 9</div>
+      <button id="botonAJAX">AJAX</button>
+      <button id="botonReiniciar">Reiniciar</button>
+    </div>
+    <script>
+      document.getElementById("caja2").onclick = function () {
+        alert("click en boton 2");
+      };
+
+      document.querySelector("#caja3").addEventListener("click", Mifuncion2);
+
+      function Mifuncion1() {
+        alert("Hola");
+      }
+      function Mifuncion2() {
+        alert("Probando");
+      }
+
+      window.onload = function () {
+        const botonAJAX = document.getElementById("botonAJAX");
+        const botonReset = document.getElementById("botonReiniciar");
+
+        botonAJAX.addEventListener("click", function () {
+          var solicitud = new XMLHttpRequest();
+          solicitud.onreadystatechange = function () {
+            if (solicitud.readyState == 4 && solicitud.status == 200) {
+              document.getElementById("caja2").innerHTML =
+                solicitud.responseText;
+            }
+          };
+          solicitud.open("GET", "CargarArchivo.txt", true);
+          solicitud.send();
+        });
+        botonReset.addEventListener("click", function () {
+          document.getElementById("caja2").innerHTML = "Caja 2";
+        });
+      };
+    </script>
+  </body>
+</html>
