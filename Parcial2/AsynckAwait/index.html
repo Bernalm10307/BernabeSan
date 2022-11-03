@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Chuck norris API</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <p class="chiste"></p>
+      <button class="btnGenerar">Generar chiste</button>
+      <button class="btnJquery">Generar con JQuery</button>
+      <button class="btnPeticionFetchAsyncAwait">PeticionAsyncAwait</button>
+    </div>
+    <script>
+      document
+        .querySelector(".btnGenerar")
+        .addEventListener("click", hacerPeticion);
+
+      function hacerPeticion() {
+        fetch("https://api.chucknorris.io/jokes/random")
+          .then((respuesta) => respuesta.json())
+          .then(
+            (data) => (document.querySelector(".chiste").innerHTML = data.value)
+          );
+      }
+      document
+        .querySelector(".btnPeticionFetchAsyncAwait")
+        .addEventListener("click", async function () {
+          let respuesta = await fetch(
+            "https://api.chucknorris.io/jokes/random"
+          );
+          let datoJSON = await respuesta.json();
+          document.querySelector(".chiste").innerHTML = datoJSON.value;
+        });
+
+      document
+        .querySelector(".btnJquery")
+        .addEventListener("click", function () {
+          $.getJSON(
+            "https://api.chucknorris.io/jokes/random",
+            function (datoJSON) {
+              // console.log(datoJSON);
+              document.querySelector(".chiste").innerHTML = datoJSON.value;
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
