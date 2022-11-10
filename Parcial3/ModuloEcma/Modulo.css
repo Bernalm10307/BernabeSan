@@ -1,23 +1,29 @@
-#cad {
-  background: gray;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+#cad1 {
+  background: wheat;
+  font-family: "Times New Roman", Times, serif;
   font-style: oblique;
 }
 
-#cadM {
-  background: gray;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+#cad2 {
+  background: wheat;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
   color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 * {
-  background: white;
+  background: red;
 }
 
-#btn {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+#btnProcesar {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
 }
