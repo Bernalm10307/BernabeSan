@@ -1,0 +1,23 @@
+#cad {
+  background: gray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+}
+
+#cadM {
+  background: gray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  background: white;
+}
+
+#btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
