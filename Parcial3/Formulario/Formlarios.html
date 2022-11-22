@@ -126,9 +126,25 @@
         </div>
         <div><h1></h1></div>
         <div class="col-md-12">
-          <center><button class="btn-pimary">REGISTRAR</button></center>
+          <center>
+            <button class="btn-pimary" id="btn">REGISTRAR</button>
+          </center>
         </div>
       </form>
     </div>
   </body>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", async () => {
+      let respuesta = await fetch("configuracion.php");
+      let dato = await respuesta.json();
+      document.getElementById("Nombre").value = reg.nombres;
+      document.getElementById("Apellido Paterno").value = reg.ApellidoPaterno;
+      document.getElementById("Apellido Materno").value = reg.ApellidoMaterno;
+      document.getElementById("Correo Electronico").value = reg.Correo;
+      document.getElementById("Posicion").value = reg.Posicion;
+      document.getElementById("Equipo Actual").value = reg.CURP;
+      document.getElementById("Ciudad").value = reg.Materia;
+    });
+  </script>
 </html>
