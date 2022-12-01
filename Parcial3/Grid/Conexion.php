@@ -1,9 +1,9 @@
 <?php
 $servidor = "localhost";
 $basededatos = "bdalumnos";
-$usuario = "admin";
-$password = "rEPB(3yt64_NwJ[V";
-$port = "3308";
+$usuario = "cesar";
+$password = "cesar123";
+$port = "3306";
 
 $con = mysqli_connect($servidor,$usuario,$password,$basededatos, $port) or die ("No se conecto");
 $consulta = "select * from alumnos";  
