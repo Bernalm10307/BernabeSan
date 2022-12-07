@@ -5,12 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
     <form id="form">
+       <center>
+        <div>
         <label for="nombre">Nombre</label>
         <input id="nombre" name="nombre" type="text">
+        </div>
+        <div>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text">
+        </div>
+        <div>
+            <label for="direccion">Direccion</label>
+            <input id="direccion" name="direccion" type="text">
+            </div>
+            <div>
+            <label for="rfc">RFC</label>
+            <input id="rfc" name="rfc" type="text">
+            </div>
+            <div>
+                <label for="curp">CURP</label>
+                <input id="curp" name="curp" type="text">
+            </div>
+        <div>
         <input id="btn" type="button" value="crear PDF">
+        </div>
+       </center>
     </form>
     <script>
         document.getElementById("btn").addEventListener("click", async () => {
