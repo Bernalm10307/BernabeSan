@@ -12,19 +12,23 @@ $query = mysqli_query($con, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Usuarios.css">
-    <title>Usuarios</title>
+    <title>Alumnos</title>
 </head>
 <body>
-    <h1 id="Encabezado">Alumnos</h1>
+    <h1 id="Encabezado"> C.R.U.D Alumnos</h1>
+    <img id="foto" src="https://www.magisnet.com/wp-content/uploads/2020/09/Autonomia-alumno.jpg" width= "200" height="200">
     
-    
+   
     <div class="Usuarios" id="Formusuarios">
-        <h2>Agregar alumno</h2>
         <form action="Agregar_Usuario.php" method="POST">
-       <input type="text" name="Id" placeholder="Id">
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="text" name="Apellido" placeholder="Apellido">
-        <input type="text" name="Telefono" placeholder="Telefono">
+        <label for="Id">Id:</label>
+       <input type="text" name="Id">
+       <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido">
+        <label for="Telefono">Telefono:</label>
+        <input type="text" name="Telefono">
 
 
     
@@ -34,7 +38,7 @@ $query = mysqli_query($con, $sql);
     </div>
 
     <div class="alumnos-table">
-        <h3>Alumnos</h3>
+        <h3 id="TablaAlumnos" >Alumnos</h3>
         <table>
             <thead>
                 <tr>
