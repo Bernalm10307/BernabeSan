@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petición a Express</title>
+</head>
+<body>
+    <h1>Petición a un Servidor Express</h1>
+    <button id="fetchMessage">Obtener Mensaje</button>
+    <p id="message"></p>
+
+    <form method="GET" action="http://localhost:3000">
+         <button id="btn" type="submit">GETPeticion</button>
+         target="resultado"
+    </form>
+    <iframe id="resultado"> </iframe>
+
+    <!-- <script>
+        // Obtener los elementos
+        const button = document.getElementById('fetchMessage');
+        const messageParagraph = document.getElementById('message');
+
+        // Añadir un event listener al botón
+        button.addEventListener('click', () => {
+            // Hacer la solicitud a la API de Express
+            fetch('http://localhost:3000')
+                .then(response => response.text())
+                .then(data => {
+                    // Mostrar el mensaje en el párrafo
+                   // messageParagraph.textContent = data.message;
+                   console.log(data)
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script> -->
+</body>
+</html>

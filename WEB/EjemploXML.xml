@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+	<libro id="1">
+		<titulo>El código Da Vinci</titulo>
+		<autor>Dan Brown</autor>
+		<editorial>Planeta</editorial>
+		<precio>20.00</precio>
+	</libro>
+	<libro id="2">
+		<titulo>La Casa Verde</titulo>
+		<autor>Mario Vargas Llosa</autor>
+		<editorial>Alfaguara</editorial>
+		<precio>15.00</precio>
+	</libro>
+	<libro id="3">
+		<titulo>Cien años de soledad</titulo>
+		<autor>Gabriel García Márquez</autor>
+		<editorial>Mondadori</editorial>
+		<precio>25.00</precio>
+	</libro>
+</libreria>

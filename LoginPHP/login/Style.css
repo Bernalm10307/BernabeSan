@@ -1,0 +1,45 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+.Header
+{
+    background-color: grey;
+    font-size: 200%;
+}
+
+.info
+{
+    text-align: center;
+}
+
+.password
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Ingresar
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#Saludo
+{
+    text-align: center;
+}
+
+#FotoUser
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+#btnIngresar
+{
+    font-size: 120%;
+}
